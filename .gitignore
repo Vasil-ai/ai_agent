@@ -1,0 +1,58 @@
+# ─── Java / Maven ───────────────────────────────────────────────────────────
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.zip
+*.tar.gz
+
+# Maven wrapper
+.mvn/timing.properties
+!.mvn/wrapper/maven-wrapper.jar
+
+# ─── Spring Boot ────────────────────────────────────────────────────────────
+# H2 database files (data directory)
+data/
+
+# Application secrets / local overrides
+application-local.yml
+application-local.properties
+*.env
+
+# ─── Node / React / Vite ────────────────────────────────────────────────────
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+
+# ─── IDEs ───────────────────────────────────────────────────────────────────
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ─── OS ─────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── Logs ───────────────────────────────────────────────────────────────────
+*.log
+logs/
+spring.log
+
+# ─── LLM models (large binary files) ────────────────────────────────────────
+*.gguf
+*.bin
+*.ggml
+models/
