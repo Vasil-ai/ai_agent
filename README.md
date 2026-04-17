@@ -27,6 +27,10 @@
 
 > Сервер должен быть доступен на `http://localhost:8080`
 
+Скачать последнюю версию llama.cpp можно с [официального репозитория](https://github.com/ggml-org/llama.cpp/releases)
+
+Скачать модель можно с [huggingface](https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512)
+
 ### 2. Запустить приложение
 
 ```bash
@@ -76,6 +80,17 @@ curl http://localhost:8081/api/agent/sessions/{sessionId}/messages
 ## Swagger UI
 
 `http://localhost:8081/swagger-ui.html`
+
+## Запуск frontend application
+```
+# Перейти в папку frontend
+cd frontend
+# Установить зависимости
+npm install
+# Запустить дев-сервер
+npm run dev
+```
+> UI должен быть доступен на `http://localhost:5173`
 
 ## H2 Console
 
